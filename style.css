@@ -164,6 +164,14 @@ html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
   header h1 {
     font-size: 3.5rem;
   }
@@ -172,11 +180,58 @@ html {
     font-size: 2rem;
   }
 
+  .description p {
+    font-size: 1.1rem;
+    max-width: 100%;
+    padding: 0 10px; /* Padding for small screens */
+  }
+
   .features h3 {
     font-size: 2rem;
   }
 
+  .features li {
+    font-size: 1.1rem;
+  }
+
   .scroll-info {
     max-height: 250px;
+  }
+
+  .scroll-info p {
+    font-size: 1rem;
+  }
+}
+
+/* Very small screen adjustments */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
+  .description h2 {
+    font-size: 1.8rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
+  .features h3 {
+    font-size: 1.8rem;
+  }
+
+  .features li {
+    font-size: 1rem;
+  }
+
+  .scroll-info {
+    max-height: 200px;
+    padding: 20px;
+  }
+
+  .scroll-info p {
+    font-size: 0.95rem;
   }
 }
